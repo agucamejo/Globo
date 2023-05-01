@@ -115,12 +115,12 @@ const erroresDiv = document.getElementById("errores");
     erroresDiv.innerHTML = ""; // Limpiar errores previos
 
     if (!nombre) {
-      const errorHTML = "<p>Por favor, ingresa un usuario válido.</p>";
+      const errorHTML = "<p>Por favor, ingrese un usuario.</p>";
       erroresDiv.innerHTML += errorHTML;
     }
 
     if (!comentario) {
-      const errorHTML = "<p>Por favor, ingresa un comentario válido.</p>";
+      const errorHTML = "<p>Por favor, ingrese un comentario.</p>";
       erroresDiv.innerHTML += errorHTML;
     }
 
