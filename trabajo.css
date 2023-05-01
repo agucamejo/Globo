@@ -245,7 +245,6 @@ body {
       width: 100%;
       max-width: 9.375rem;
       height: auto;
-      margin-bottom: 0.625rem;
     }
   
     #nombre {
@@ -271,7 +270,7 @@ body {
       margin: 1.25rem;
       padding: 1rem;
       position: absolute;
-      top: 68rem;
+      top: 70rem;
       right: auto;
     }
   
