@@ -233,7 +233,9 @@ body {
     
     /* Estilos para la cabecera */
     .o-header {
+      display: flex;
       padding: 1rem 0.625rem;
+      align-items: center;
     }
   
     #img-logo{
@@ -247,7 +249,6 @@ body {
     }
   
     #nombre {
-      float: none;
       width: 100%;
       max-width: 9.375rem;
       margin: 0.625rem auto;
@@ -255,9 +256,23 @@ body {
     }
     
     /* Estilos para el contenido principal */
+    .o-section {
+        margin: 1.25rem;
+    }
+
+    #info-perfil{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
     .o-main {
-      margin: 0;
-      padding: 0 0.625rem;
+      margin: 1.25rem;
+      padding: 1rem;
+      position: absolute;
+      top: 65.625rem;
+      right: auto;
     }
   
     #img-publicacion{
@@ -279,8 +294,10 @@ body {
     
     /* Estilos para la barra lateral */
     .o-aside {
-      margin: 0.625rem auto;
-      padding: 1.25rem;
+      margin: 1.25rem;
+      padding: 1rem;
+      position: relative;
+      z-index: 1;  
     }
   
     #img-perfil{
@@ -304,8 +321,8 @@ body {
     }
   
     #comentario{
-      width: 100%;
-      margin: 0.625rem auto;
+      width: 90%;
+      margin: 0.625rem;
       padding: 0.625rem;
     }
   
@@ -315,7 +332,3 @@ body {
       margin: 0.625rem auto;
     }
 }
-  
-
-
-
