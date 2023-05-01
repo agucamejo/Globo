@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    color: #ff0000;
+    border-radius: 0.5rem;
+    font-size: 0.813rem;
+    background-color: #F4F4F5;
+    padding: 0.5rem;
+    width: auto;
+    max-height: 2.5rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0.313rem 0.313rem 0.313rem 0rem;
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 900;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+body {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-areas: 
+        "header header header"
+        "section section section"
+        "main main aside";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: #F4F4F5;
+}
+
+.o-aside, .o-main, .o-section {
+    background: #FFF;
+    border-radius: 0.75rem;
+    padding: 0.938rem;
+}
+
+.o-header {
+    background-color: #3B82F6;
+    grid-area: header;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.o-aside {
+    grid-area: aside;
+    margin-right: 6.25rem;
+    padding: 2rem;
+    margin-bottom: 31.25rem;
+}
+
+.o-main {
+    grid-area: main;
+    margin-left:6.25rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    margin-bottom: 6.25rem;
+}
+
+.o-section {
+    grid-area: section;
+    padding: 1rem;
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+}
+
+#img-logo{
+    float: left;
+    width: 9.375rem;
+    height: auto;
+    margin-left: 3.125rem;
+}
+
+#nombre {
+    float: right;
+    width: 9.375rem;
+    padding: 0.5rem 2rem 0.5rem 1.125rem;
+    font-size: 0.938rem;
+    border: none;
+    border-radius: 0.75rem;
+    background: #DBEAFE;
+    margin-top: 0.438rem;
+    margin-right: 3.438rem;
+}
+
+#comentario{
+    width: 40.625rem;
+    padding: 0.625rem;
+    font-size: 0.938rem;
+    border: none;
+    border-radius: 0.75rem;
+    background: #F4F4F5;
+    margin:0.313rem 0.313rem 0.313rem 0rem;
+}
+
+#comentar{
+    border-radius: 0.75rem;
+    font-size: 0.938rem;
+    background-color: #3B82F6;
+    color: #FFF;
+    padding: 0.625rem;
+    width: auto;
+    max-height: 5rem;
+    float: right;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#boton-seguir{
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    background-color: #3B82F6;
+    color: #FFF;
+    padding: 0.625rem;
+    width: auto;
+    max-height: 5rem;
+    float: right;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+}
+
+#img-perfil{
+    border-radius: 50%;
+    width: 15.625rem;
+    height: 15rem;
+    float: left;
+    margin-right: 1.875rem;
+    border: 0.25rem solid #3B82F6;
+    padding: 0.125rem;
+}
+
+#img-publicacion{
+    width: 50rem;
+    height: 31.25rem;
+    margin-bottom: 0.625rem;
+    border-radius: 2% ;
+}
+
+#sector-mg{
+    overflow: auto;
+}
+
+#boton-me-gusta{
+    float: left;
+    color: #3B82F6;
+}
+
+#contador-me-gusta{
+    float: right;
+    margin-top: 0.625rem;
+}
+
+#info-perfil{
+    overflow: auto;
+    margin-top: 1.25rem;
+}
+
+.o-main h4{
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+}
+
+.o-main p{
+    padding-bottom: 0.625rem;
+}
+
+.o-section h2{
+    padding-bottom: 0.938rem;
+}
+
+.o-section p{
+    padding-bottom: 0.938rem;
+}
+
+.o-aside p{
+    padding-top: 0.625rem;
+}
+
+.comentarios p{
+    padding-bottom: 0.625rem;
+}
+
+#errores{
+    color: #ff0000;
+}
+
+.transparente{
+    color: #0000006a;
+}
+
+#nombre-perfil{
+    font-size: 2.813rem;
+}
+
+.titulo{
+    font-size: 1.25rem;
+    color: #0000008f;
+}
+
+#sobre-mi{
+    font-size: 2.188rem;
+    font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+    body {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Estilos para la cabecera */
+    .o-header {
+      padding: 1rem 0.625rem;
+    }
+  
+    #img-logo{
+      float: none;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 9.375rem;
+      height: auto;
+      margin-bottom: 0.625rem;
+    }
+  
+    #nombre {
+      float: none;
+      width: 100%;
+      max-width: 9.375rem;
+      margin: 0.625rem auto;
+      padding: 0.5rem 1.125rem;
+    }
+    
+    /* Estilos para el contenido principal */
+    .o-main {
+      margin: 0;
+      padding: 0 0.625rem;
+    }
+  
+    #img-publicacion{
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.625rem;
+    }
+  
+    #sector-mg{
+      overflow: hidden;
+    }
+  
+    #contador-me-gusta{
+      margin-top: 0;
+      margin-bottom: 0.625rem;
+      display: block;
+      text-align: center;
+    }
+    
+    /* Estilos para la barra lateral */
+    .o-aside {
+      margin: 0.625rem auto;
+      padding: 1.25rem;
+    }
+  
+    #img-perfil{
+      float: none;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 15.625rem;
+      height: auto;
+      margin-bottom: 0.625rem;
+    }
+  
+    #boton-seguir{
+      float: none;
+      display: block;
+      margin: 0.625rem auto;
+    }
+  
+    .comentarios p{
+      padding-bottom: 0.625rem;
+    }
+  
+    #comentario{
+      width: 100%;
+      margin: 0.625rem auto;
+      padding: 0.625rem;
+    }
+  
+    #comentar{
+      float: none;
+      display: block;
+      margin: 0.625rem auto;
+    }
+}
+  
+
+
+
