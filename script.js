@@ -150,3 +150,27 @@ const erroresDiv = document.getElementById("errores");
     }
   });
 
+  //Efecto de historia al tocar imagen de perfil
+  const imgPerfil = document.getElementById('img-perfil');
+
+  imgPerfil.addEventListener('click', () => {
+    document.body.appendChild(fondoOscuro);
+    document.body.appendChild(imgAgrandada);
+    document.body.style.overflow = "hidden";
+  });
+  
+  const imgAgrandada = document.createElement('img');
+  imgAgrandada.className = 'img-agrandada';
+  imgAgrandada.src = 'img/Foto Historia.png';
+  imgAgrandada.alt = 'Foto de perfil agrandada de Jane Doe';
+  
+  
+  const fondoOscuro = document.createElement('div');
+  fondoOscuro.className = 'fondo-oscuro';
+  
+  
+  imgAgrandada.addEventListener('click', () => {
+    document.body.removeChild(imgAgrandada);
+    document.body.removeChild(fondoOscuro);
+    document.body.style.overflow = "auto";
+  });
