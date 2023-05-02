@@ -242,7 +242,8 @@ input:focus {
 
 @media (max-width: 768px) {
     body {
-      display: block;
+      display: flex;
+      flex-direction: column;
       margin: 0;
       padding: 0;
     }
@@ -252,6 +253,10 @@ input:focus {
       display: flex;
       padding: 1rem 0.625rem;
       align-items: center;
+      order: 1;
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
   
     #img-logo{
@@ -266,13 +271,14 @@ input:focus {
     #nombre {
       width: 100%;
       max-width: 9.375rem;
-      margin: 0.625rem auto;
+      margin: 0.625rem;
       padding: 0.5rem 1.125rem;
     }
     
     /* INICIO SECTION - PERFIL */
     .o-section {
-        margin: 1.25rem;
+        margin: 8rem 1.25rem 0rem 1.25rem;
+        order: 2;
     }
 
     #info-perfil{
@@ -300,11 +306,9 @@ input:focus {
     
     /* INICIO MAIN - PUBLICACION */
     .o-main {
-      margin: 1.25rem;
+      margin: 0rem 1.25rem 1.25rem 1.25rem;
       padding: 1rem;
-      position: absolute;
-      top: 70rem;
-      right: auto;
+      order: 4;
     }
   
     #img-publicacion{
@@ -342,10 +346,9 @@ input:focus {
     
     /* INICIO ASIDE - SOBRE MI */
     .o-aside {
-      margin: 1.25rem;
+      margin: 0rem 1.25rem;
       padding: 1rem;
-      position: relative;
-      z-index: 1;  
+      order:3;
     }
 
 }
