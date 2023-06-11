@@ -5,63 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLOBO</title>
-    <link rel="shortcut icon" href="img/Logo Globo (solo mundo).png" >
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/img/Logo Globo (solo mundo).png" >
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 </head>
-<body>
-    
-    <header class="o-header">
-        <!-- SECCIÓN NAVBAR -->
-        <img src="img/Logo Globo.png" alt="Logo de globo" id="img-logo">
-        <input type="text" id="nombre" placeholder="Ingresa tu usuario...">
-    </header>
+<body>  
+    <div id="app">  
+        <header class="o-header"><nav-bar></nav-bar></header>
+        <section class="o-section"><datos-perfil> </datos-perfil></section>
+        <main class="o-main" ><publicacion> </publicacion></main>
+        <aside class="o-aside"><sobre-mi> </sobre-mi></aside>
+    </div>
 
-    
-    <section class="o-section">
-        <!-- BOTON SEGUIR -->
-        <div id="info-perfil"> 
-            <img src="img/Foto perfil.jpeg" alt="Foto de perfil de Jane Doe" id="img-perfil">
-            
-            <h2 id="nombre-perfil">Jane Doe</h2>
-            <p><strong>Email:</strong> jane_doe@gmail.com</p>
-            <p><strong>Fecha de nacimiento:</strong> 01/05/1996</p>
-            <p><strong>Teléfono:</strong> 918-936-3985</p>
-            <p><strong>Ciudad:</strong> Tokyo, Japón.</p>
-            <p class="transparente">Trabajando en <strong>Lawn N</strong></p>
+ <script src="./main.js"></script>
 
-            <button id="boton-seguir">Seguir</button> 
-        </div>
-    </section>
-    
-    <main class="o-main">
-        <h4 class="transparente">Publicado hace 1 semana</h4>
-        <img src="img/imagen publicacion.jpeg" alt="Imagen publicada por Jane Doe" id="img-publicacion"><br>
-        
-        <!-- BOTON ME GUSTA -->
-        <div id="sector-mg">
-            <button id="boton-me-gusta">Me gusta</button> 
-            <span id="contador-me-gusta"><span id="num-likes"></span> likes</span>
-        </div>
-        
-        <h4 class="titulo">Comentarios</h4>
-        <p><strong>Juan Perez:</strong> ¡Wow, esa foto de Tokio es impresionante! </p>
-        <p><strong>Kathleen J Rennie:</strong> ¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
-        
-        <div id="comentarios"></div>
+ <script src="./components/navbar.js"></script>
+ <script src="./components/DatosPerfil.js"></script>
+ <script src="./components/Publicacion.js"></script>
+ <script src="./components/SobreMi.js"></script>
 
-        <input type="text" id="comentario" placeholder="Deja tu comentario...">
-        <button id="comentar">Comentar</button>
-    
-    
-        <div id="errores"></div>
-    </main>
-
-    <aside class="o-aside">
-        <h3 class="titulo" id="sobre-mi">Sobre mí</h3>
-        <p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibrante y emocionante ciudad de Tokio, Japón. Me encanta capturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilo, encuentro inspiración en cada rincón de esta increíble ciudad.</p>
-    </aside>
-
-<script src="script.js"></script>
+ <script>
+   const mountedApp = app.mount('#app')
+ </script>
     
 </body>
 </html>
