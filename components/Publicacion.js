@@ -15,7 +15,7 @@ app.component('publicacion', {
     /*html*/
     `
         <h4 class="transparente">Publicado hace 1 semana</h4>
-        <img src="/assets/img/imagen publicacion.jpeg" alt="Imagen publicada por Jane Doe" id="img-publicacion"><br>
+        <img src="./assets/img/imagen publicacion.jpeg" alt="Imagen publicada por Jane Doe" id="img-publicacion"><br>
     
         <div id="sector-mg">
             <button :style="{ color: meGusta ? '#f95252' : '#3B82F6' }" @click="BotonMeGusta">

@@ -3,7 +3,7 @@ app.component('datos-perfil', {
     /*html*/
     `
     <div id="info-perfil"> 
-        <img src="/assets/img/Foto perfil.jpeg" alt="Foto de perfil de Jane Doe" id="img-perfil">
+        <img src="./assets/img/Foto perfil.jpeg" alt="Foto de perfil de Jane Doe" id="img-perfil">
         
         <h2 id="nombre-perfil">Jane Doe</h2>
         <p><strong>Email:</strong> jane_doe@gmail.com</p>
