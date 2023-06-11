@@ -4,7 +4,7 @@ app.component('nav-bar',
     /*html*/
     `            
     <div>
-        <img src="/assets/img/Logo Globo.png" alt="Logo de globo" id="img-logo">
+        <img src="./assets/img/Logo Globo.png" alt="Logo de globo" id="img-logo">
         <div v-if="usuarioGuardado">
             <h4 class="usuario-guardado">{{ usuarioGuardado }}</h4>
             <button @click="eliminarUsuario" class="boton-usuario">Cerrar Sesión</button>
