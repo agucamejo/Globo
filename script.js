@@ -1,6 +1,5 @@
 //BOTON ME GUSTA
 const botonLikes = document.querySelector('#boton-me-gusta');
-const contadorLikes = document.querySelector('#contador-me-gusta');
 const numLikes = document.querySelector('#num-likes');
 let likes = 200;
 let meGusta = localStorage.getItem('meGusta') === 'true';
