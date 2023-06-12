@@ -39,7 +39,7 @@ app.component('publicacion', {
             <p v-for="error in errores" :key="error">{{ error }}</p>
         </div>
         
-        <input type="text" id="input-comentario" v-model="comentario">
+        <input type="text" id="input-comentario" v-model="comentario" placeholder="Deja tu comentario...">
         <button id="comentar" @click="agregarComentario">Comentar</button>
     `,
       
