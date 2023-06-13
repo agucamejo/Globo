@@ -11,7 +11,7 @@ button{
     color: #ff0000;
     border-radius: 0.5rem;
     font-size: 0.813rem;
-    background-color: #e3e3e3;
+    background-color: whitesmoke;
     padding: 0.5rem;
     width: auto;
     max-height: 2.5rem;
@@ -32,7 +32,7 @@ button{
         "main main aside";
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
-    background-color: #e3e3e3;
+    background-color: whitesmoke;
 }
 
 h2{
@@ -52,7 +52,7 @@ input:focus {
 }
 
 .transparente{
-    color: #0000006a;
+    color: #00000090;
 }
 
 .titulo{
@@ -210,7 +210,7 @@ div .comentarios{
     font-size: 0.938rem;
     border: none;
     border-radius: 0.75rem;
-    background: #e3e3e3;
+    background: whitesmoke;
     margin:0.313rem 0.313rem 0.313rem 0rem;
 }
 

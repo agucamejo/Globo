@@ -21,7 +21,10 @@ app.component('publicacion', {
             <button :style="{ color: meGusta ? '#f95252' : '#3B82F6' }" @click="BotonMeGusta">
                 {{ meGusta ? 'Quitar me gusta' : 'Me gusta' }}
             </button>
-            <span id="contador-likes" :style="{ fontWeight: 'bold' }">{{ contador }} likes</span>
+            <span id="contador-likes">
+            <span :style="{ fontWeight: 'bold' }">{{ contador }}</span>
+            <span class="transparente">Likes</span>
+            </span>
         </div>
     
         <h4 class="titulo">Comentarios</h4>
@@ -30,7 +33,7 @@ app.component('publicacion', {
     
         <div id="comentarios">
             <div v-for="(comentario, indice) in comentarios" :key="indice" class="comentarios">
-            <strong>{{ comentario.nombre }}</strong>: {{ comentario.texto }}
+            <strong :style="{color: '#3B82F6', fontWeight: 'bold'}">{{ comentario.nombre }}</strong> {{ comentario.texto }}
             <button class="eliminar" v-if="comentario.nombre === nombre" @click="eliminarComentario(indice)">Eliminar</button>
             </div>
         </div>
