@@ -28,12 +28,12 @@ app.component('publicacion', {
         </div>
     
         <h4 class="titulo">Comentarios</h4>
-        <p><strong>Juan Perez:</strong> ¡Wow, esa foto de Tokio es impresionante! </p>
-        <p><strong>Kathleen J Rennie:</strong> ¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
+        <p><strong>Juan Perez</strong> ¡Wow, esa foto de Tokio es impresionante! </p>
+        <p><strong>Kathleen J Rennie</strong> ¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
     
         <div id="comentarios">
             <div v-for="(comentario, indice) in comentarios" :key="indice" class="comentarios">
-            <strong :style="{color: '#3B82F6', fontWeight: 'bold'}">{{ comentario.nombre }}</strong> {{ comentario.texto }}
+            <strong :style="{color: comentario.color, fontWeight: 'bold'}">{{ comentario.nombre }}</strong> {{ comentario.texto }}
             <button class="eliminar" v-if="comentario.nombre === nombre" @click="eliminarComentario(indice)">Eliminar</button>
             </div>
         </div>
@@ -86,6 +86,7 @@ app.component('publicacion', {
           const nuevoComentario = {
             nombre: this.nombre,
             texto: this.comentario,
+            color: '#3B82F6'
           };
           this.comentarios.push(nuevoComentario);
           localStorage.setItem('comentarios', JSON.stringify(this.comentarios));
