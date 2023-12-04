@@ -11,7 +11,7 @@ button{
     color: #ff0000;
     border-radius: 0.5rem;
     font-size: 0.813rem;
-    background-color: #e3e3e3;
+    background-color: #F5F5F5;
     padding: 0.5rem;
     width: auto;
     max-height: 2.5rem;
@@ -32,7 +32,7 @@ button{
         "main main aside";
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
-    background-color: #e3e3e3;
+    background-color: #F5F5F5;
 }
 
 h2{
@@ -89,7 +89,7 @@ input:focus {
 
 .boton-usuario{
     color: #000000;
-    margin: 0.313rem 0.35rem 0.313rem 0rem;
+    margin: 0.313rem 2.35rem 0.313rem 0rem;
     position: absolute;
     right: 0;
 }
@@ -187,7 +187,6 @@ input:focus {
 #img-publicacion{
     width: 50rem;
     height: 31.25rem;
-    margin-bottom: 0.625rem;
     border-radius: 2% ;
 }
 
@@ -272,20 +271,17 @@ div .comentarios{
     }
   
     #img-logo{
-      float: none;
       margin: 0 auto 0 0;
       width: 100%;
-      max-width: 9.375rem;
+      max-width: 7rem;
       height: auto;
     }
   
     #nombre {
-      width: 100%;
-      max-width: 9.375rem;
-      margin: auto;
-      padding: 0.5rem 1.125rem;
-      margin-left: 3.5rem;
-      margin-top: 0.5rem;
+        width: 100%;
+        max-width: 9.375rem;
+        padding: 0.5rem 1.125rem;
+        margin-left: 13rem;
     }
     
     /* INICIO SECTION - PERFIL */
@@ -306,7 +302,7 @@ div .comentarios{
       display: block;
       margin: 0 auto;
       width: 100%;
-      max-width: 15.625rem;
+      max-width: 14.625rem;
       height: auto;
       margin-bottom: 0.625rem;
     }
@@ -322,12 +318,12 @@ div .comentarios{
         margin: 0rem 1.25rem 1.25rem 1.25rem;
         padding: 1rem;
         order: 4;
+        display: grid;
     }
   
     #img-publicacion{
       width: 100%;
       height: auto;
-      margin-bottom: 0.625rem;
     }
   
     #sector-mg{
@@ -343,6 +339,11 @@ div .comentarios{
         margin: 0.625rem;
         padding: 0.625rem;
     }
+
+    #input-comentario{
+        width: auto;
+    }
+
     
     #comentar{
         float: none;

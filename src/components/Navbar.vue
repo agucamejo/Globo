@@ -1,10 +1,6 @@
-app.component('nav-bar', 
-{
-    template:
-    /*html*/
-    `            
+<template>
     <div>
-        <img src="./assets/img/Logo Globo.png" alt="Logo de globo" id="img-logo">
+        <img src="../assets/img/Logo Globo.png" alt="Logo de globo" id="img-logo">
         <div v-if="usuarioGuardado">
             <h4 class="usuario-guardado">{{ usuarioGuardado }}</h4>
             <button @click="eliminarUsuario" class="boton-usuario">Cerrar Sesión</button>
@@ -14,7 +10,10 @@ app.component('nav-bar',
             <button @click="agregarUsuario" class="boton-usuario">Ingresar</button>
         </div>
     </div>
-    `,
+</template>
+
+<script>
+export default{
     data() {
         return{
             nuevoUsuario: {
@@ -54,4 +53,5 @@ app.component('nav-bar',
             location.reload();
         },
     },
-})
+}
+</script>
