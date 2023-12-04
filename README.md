@@ -28,8 +28,8 @@ npm run dev
 ```sh
 npm run build
 ```
-=======
+
 Integrantes: González Cristian, Camejo Agustin, Gilli Franco.
 
-Deploy del trabajo: https://agucamejo.github.io/Globo/
->>>>>>> d69345ccf3f2fbf6cfa12f0a283037a025cfc7e2
+Deploy del trabajo: 
+
