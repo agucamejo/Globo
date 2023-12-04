@@ -81,14 +81,18 @@ app.component('publicacion', {
     
         if (this.nombre && this.comentario) {
           const nuevoComentario = {
-            nombre: this.nombre,
-            texto: this.comentario,
+              nombre: this.nombre,
+              texto: this.comentario,
           };
-          this.comentarios.push(nuevoComentario);
-          localStorage.setItem('comentarios', JSON.stringify(this.comentarios));
-    
-          this.comentario = '';
-        }
+  
+          if (nuevoComentario.texto.trim() !== '') {
+              this.comentarios.push(nuevoComentario);
+              localStorage.setItem('comentarios', JSON.stringify(this.comentarios));
+              this.comentario = '';
+          } else {
+              this.errores.push('El comentario no puede estar vacío.');
+          }
+      }
       },
     },
 })

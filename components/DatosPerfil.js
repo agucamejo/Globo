@@ -12,7 +12,7 @@ app.component('datos-perfil', {
         <p><strong>Ciudad:</strong> Tokyo, Japón.</p>
         <p class="transparente">Trabajando en <strong>Lawn N</strong></p>
 
-        <button id="boton-seguir" v-bind:style="{ color: '#FFF', backgroundColor: seguir ? '#f95252' : '#3B82F6' }" v-on:click="BotonSeguir">
+        <button id="boton-seguir" :style="{ color: '#FFF', backgroundColor: seguir ? '#f95252' : '#3B82F6' }" v-on:click="BotonSeguir">
         {{ seguir ? 'Dejar de seguir' : 'Seguir' }}
         </button>
     </div>

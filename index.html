@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLOBO</title>
-    <link rel="shortcut icon" href="./assets/img/Logo Globo (solo mundo).png" >
-    <link rel="stylesheet" href="./assets/style.css">
-    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
-</head>
-<body>  
-    <div id="app">  
-        <header class="o-header"><nav-bar></nav-bar></header>
-        <section class="o-section"><datos-perfil> </datos-perfil></section>
-        <main class="o-main" ><publicacion> </publicacion></main>
-        <aside class="o-aside"><sobre-mi> </sobre-mi></aside>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GLOBO</title>
+        <link rel="shortcut icon" href="./assets/img/Logo Globo (solo mundo).png" >
+        <link rel="stylesheet" href="./assets/style.css">
+        <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>  
+        <div id="app">  
+            <header class="o-header"><nav-bar></nav-bar></header>
+            <section class="o-section"><datos-perfil> </datos-perfil></section>
+            <main class="o-main" ><publicacion> </publicacion></main>
+            <aside class="o-aside"><sobre-mi> </sobre-mi></aside>
+        </div>
 
- <script src="./main.js"></script>
+        <script src="./main.js"></script>
 
- <script src="./components/navbar.js"></script>
- <script src="./components/DatosPerfil.js"></script>
- <script src="./components/Publicacion.js"></script>
- <script src="./components/SobreMi.js"></script>
+        <script src="./components/navbar.js"></script>
+        <script src="./components/DatosPerfil.js"></script>
+        <script src="./components/Publicacion.js"></script>
+        <script src="./components/SobreMi.js"></script>
 
- <script>
-   const mountedApp = app.mount('#app')
- </script>
-    
-</body>
+        <script>
+            const mountedApp = app.mount('#app')
+        </script>
+        
+    </body>
 </html>

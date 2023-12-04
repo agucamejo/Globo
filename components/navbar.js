@@ -29,11 +29,19 @@ app.component('nav-bar',
     },
     methods: {
         agregarUsuario () {
-            let nuevo = {}
-            nuevo.nombre = this.nuevoUsuario.nombre,
-            
-            this.nuevoUsuario.nombre = ''
-
+            if (!this.nuevoUsuario.nombre.trim()) {
+                Swal.fire({
+                    text: "El nombre del usuario no puede estar vacío",
+                    icon: "error"
+                });
+                return;
+            }
+        
+            let nuevo = {};
+            nuevo.nombre = this.nuevoUsuario.nombre;
+        
+            this.nuevoUsuario.nombre = '';
+        
             localStorage.setItem('nombre', nuevo.nombre);
             location.reload();
         },
