@@ -21,16 +21,19 @@ app.component('publicacion', {
             <button :style="{ color: meGusta ? '#f95252' : '#3B82F6' }" @click="BotonMeGusta">
                 {{ meGusta ? 'Quitar me gusta' : 'Me gusta' }}
             </button>
-            <span id="contador-likes" :style="{ fontWeight: 'bold' }">{{ contador }} likes</span>
+            <span id="contador-likes">
+            <span :style="{ fontWeight: 'bold' }">{{ contador }}</span>
+            <span class="transparente">Likes</span>
+            </span>
         </div>
     
         <h4 class="titulo">Comentarios</h4>
-        <p><strong>Juan Perez:</strong> ¡Wow, esa foto de Tokio es impresionante! </p>
-        <p><strong>Kathleen J Rennie:</strong> ¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
+        <p><strong>Juan Perez</strong> ¡Wow, esa foto de Tokio es impresionante! </p>
+        <p><strong>Kathleen J Rennie</strong> ¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
     
         <div id="comentarios">
             <div v-for="(comentario, indice) in comentarios" :key="indice" class="comentarios">
-            <strong>{{ comentario.nombre }}</strong>: {{ comentario.texto }}
+            <strong :style="{color: comentario.color, fontWeight: 'bold'}">{{ comentario.nombre }}</strong> {{ comentario.texto }}
             <button class="eliminar" v-if="comentario.nombre === nombre" @click="eliminarComentario(indice)">Eliminar</button>
             </div>
         </div>
@@ -81,8 +84,9 @@ app.component('publicacion', {
     
         if (this.nombre && this.comentario) {
           const nuevoComentario = {
-              nombre: this.nombre,
-              texto: this.comentario,
+            nombre: this.nombre,
+            texto: this.comentario,
+            color: '#3B82F6'
           };
   
           if (nuevoComentario.texto.trim() !== '') {
