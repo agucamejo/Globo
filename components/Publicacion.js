@@ -88,11 +88,15 @@ app.component('publicacion', {
             texto: this.comentario,
             color: '#3B82F6'
           };
-          this.comentarios.push(nuevoComentario);
-          localStorage.setItem('comentarios', JSON.stringify(this.comentarios));
-    
-          this.comentario = '';
-        }
+  
+          if (nuevoComentario.texto.trim() !== '') {
+              this.comentarios.push(nuevoComentario);
+              localStorage.setItem('comentarios', JSON.stringify(this.comentarios));
+              this.comentario = '';
+          } else {
+              this.errores.push('El comentario no puede estar vacío.');
+          }
+      }
       },
     },
 })
